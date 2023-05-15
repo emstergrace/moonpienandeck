@@ -1,0 +1,31 @@
+LINK = "railroadCards.csv"
+
+; Settings
+UNIT = INCH
+PAGE = 8.5, 11, PORTRAIT
+BORDER = RECTANGLE, #000000, .1
+VISUAL=, 10, 10
+FONT=Arial,14,BU,#000000
+;Title
+TEXT="1-{(NAME)}",[NAME],{100/-333}%,0%,100%,18.4%
+FONT=Arial,12,I,#000000
+;Cost To Purchase Number
+TEXT=,"Cost of Purchase          [COST OF PURCHASE]",{100/37}%,16.8%,{3600/37}%,6.6%,LEFT
+FONT=Arial,10,,#000000
+;Rent Number
+TEXT="1-{(RENT)}",[RENT],{2900/37}%,23%,{2000/111}%,13.6%
+;Rent if 2 Number
+TEXT="1-{(2 RR OWNED)}",[2 RR OWNED],{2900/37}%,32%,{2000/111}%,13.6%
+;Rent if 3 Number
+TEXT="1-{(3 RR OWNED)}",[3 RR OWNED],{2900/37}%,40.8%,{2000/111}%,13.6%
+;Rent if 4 Number
+TEXT="1-{(4 RR OWNED)}",[4 RR OWNED],{2900/37}%,49.8%,{2000/111}%,13.6%
+;Rent Text
+TEXT=,"Rent",{1000/333}%,23%,{5000/333}%,13.6%,LEFT
+;Rent if 2 Text
+TEXT=,"Rent if 2 Railroads owned",{1000/333}%,32%,{22600/333}%,13.6%,LEFT
+;Rent if 3 Text
+TEXT=,"Rent if 3 Railroads owned",{1000/333}%,41.2%,{22600/333}%,13.6%,LEFT
+;Rent if 4 Text
+TEXT=,"Rent if 4 Railroads owned",{1000/333}%,50.2%,{22600/333}%,13.6%,LEFT
+ENDVISUAL
